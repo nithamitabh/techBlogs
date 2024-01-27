@@ -1,0 +1,40 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* height: 100px; */
+    padding: 10px;
+    margin-top: 0px;
+    background-color: rgba(154, 189, 239, 0.3);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+}
+.logo{
+    font-weight: bold;
+    font-size: 24px;
+
+}
+.links{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+}
+@media screen and (max-width: 768px)
+{
+    .links{
+        font-size: 14px;
+    }
+    
+}
+.searchButton{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 15px;
+    gap: 10px;
+    background-color: #1f3050;
+    color:#c6d2d9;
+}
+
+

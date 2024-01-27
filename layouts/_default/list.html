@@ -1,0 +1,29 @@
+{{ define "main"}} {{/* <link rel="stylesheet" href="styles/style.css" /> */}}
+<div class="list">
+  {{ range .Paginator.Pages }}
+  <div class="listItem">
+    <img
+      src="{{.Params.image}}"
+      alt="{{.Title}}"
+      class="listItemImg"
+    />
+    <div class="listItemTexts">
+      <h1 class="listItemTitle">
+        <a href="{{.Permalink}}">{{.Title}}</a>
+      </h1>
+      <p class="ListItemDesc">{{.Params.description}}</p>
+      <div class="ListItemDetail">
+        <span></span>
+        <time>{{ dateFormat .Site.Params.dateFormat  .Date}}</time>
+      </div>
+      <div class="listItemCategories">
+        {{ range (.GetTerms "categories") }}
+        <a class="listItemCategory" href= "{{.Permalink}}">{{.Name}}</a>
+        
+        {{ end }}
+      </div>
+    </div>
+  </div>
+  {{ end }}
+</div>
+{{ end}}

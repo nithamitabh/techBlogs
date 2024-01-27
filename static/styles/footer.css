@@ -1,0 +1,23 @@
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px; 
+    width: 100%;
+    font-size: 14px;
+    background-color: #1d56c04b;
+    backdrop-filter: blur(12px);
+    border-radius: 12px;
+    padding: 15px;
+    margin-top: -30px;
+}
+.footerLinks{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 15px;
+}
+.social{
+    display: flex;
+    gap: 10px;
+}

@@ -1,0 +1,6 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Your Daily Tech News'
+
+[params]
+  dateFormat = "Jan 2, 2006"

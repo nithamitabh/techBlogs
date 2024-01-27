@@ -1,0 +1,124 @@
+:root {
+    --bg: #0b1529;
+    --bgSoft: #1f3050;
+    --text: #dee4eb;
+    --textSoft: #cbd2d9;
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--bg);
+    color: var(--text);
+}
+a{
+    color:var(--textSoft); 
+    /*/text inherit */
+    text-decoration: none;
+}
+.container{
+    max-width: 1366px;
+    /* background: linear-gradient(60deg,var(--bgSoft),rgba(4, 15, 50, 0.315));
+    backdrop-filter: blur(120px);
+    border :1px solid var(--bgSoft); */
+    /* background-color: rebeccapurple; */
+    margin: auto;
+    padding-left:  50px;
+    padding-right: 50px;
+    min-height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* List Start */
+.list{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.listItem{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+.listItem img{
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+.listItemTexts{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.ListItemDetail{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+}
+.listItemCategories{
+    display: flex;
+    gap: 10px;
+}
+.listItemCategory{
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--bgSoft);
+    color: var(--textSoft);
+    font-size: 14px;
+}
+
+/* List end */
+
+@media screen and (max-width: 1568px)
+{ 
+    .container{
+        max-width: 1366px;
+    }
+}
+@media screen and (max-width: 1366px)
+{ 
+    .container{
+        max-width: 1280px;
+    }
+}
+@media screen and (max-width: 1280px)
+{ 
+    .container{
+        max-width: 1024px;
+    }
+}
+@media screen and (max-width: 1024px)
+{ 
+    .container{
+        max-width: 768px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+@media screen and (max-width: 768px)
+{ 
+    .container{
+        max-width: 640px;
+    }
+}
+@media screen and (max-width: 640px)
+{ 
+    .container{
+        max-width: 475px;
+    }
+}
+@media screen and (max-width: 475px)
+{ 
+    .container{
+        max-width: 475px;
+    }
+}
+
